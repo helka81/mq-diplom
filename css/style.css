@@ -973,6 +973,10 @@ top: 50%;
 
 @media (max-width: 640px) and (orientation: landscape) {
 
+  .head {
+  max-width: 1200px;
+  }
+
   .container_trends {
     display: flex;
     }
