@@ -173,11 +173,10 @@ display: none;
 }
 
 .trend {
-  width: 24.7%;
+  width: calc(100% / 4 - 3px);
 min-height: 316px;
 display: flex;
 flex-wrap: wrap;
-margin-right: 0.3%;
 align-self: flex-end;
 flex-direction: column;
 justify-content: flex-end;
@@ -974,7 +973,7 @@ top: 50%;
 @media (max-width: 640px) and (orientation: landscape) {
 
   .head {
-  max-width: 1200px;
+  max-width: 100%;
   }
 
   .container_trends {
@@ -1019,12 +1018,13 @@ top: 50%;
 }
 
 .trend {
- width: 49.7%;
+  width: calc(100% / 2 - 3px);
 }
 
+
 .trend:nth-child(3n) {
-  margin-top: 0.3%;
-}
+  margin-top: 3px;
+} 
 
 .main-content {
   margin-right: 32px;
@@ -1064,5 +1064,9 @@ top: 50%;
   
   .container_trends {
     flex-wrap: nowrap;
+  }
+  .trend {
+    width: calc(100% / 4 - 5px);
+    flex-grow: 1;
   }
 }
