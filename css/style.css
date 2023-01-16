@@ -173,7 +173,7 @@ display: none;
 }
 
 .trend {
-  width: calc(100% / 4 - 3px);
+width: calc(100% / 4 - 3px);
 min-height: 316px;
 display: flex;
 flex-wrap: wrap;
@@ -981,8 +981,9 @@ top: 50%;
     }
   
     .trend {
-      width: 49.7%;
+      width: calc(100% / 2 - 3px);
      }
+
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
@@ -1066,7 +1067,6 @@ top: 50%;
     flex-wrap: nowrap;
   }
   .trend {
-    width: calc(100% / 4 - 5px);
-    flex-grow: 1;
+    width: calc(100% / 4 - 3px);
   }
 }
