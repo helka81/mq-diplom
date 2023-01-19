@@ -170,16 +170,13 @@ display: none;
   flex-wrap: wrap;
    margin-top: 28px;
   justify-content: space-between; 
- 
- 
 }
 
 .trend {
-  width: 24.7%;
+  width: calc(25% - 3px);
 min-height: 316px;
 display: flex;
 flex-wrap: wrap;
-/* margin-right: 10px; */
 align-self: flex-end;
 flex-direction: column;
 justify-content: flex-end;
@@ -245,7 +242,7 @@ font-size: 20px;
 .main-content {
   display: flex;
   flex-direction: column;
-  width: 65.8%;
+  width: 75%;
 }
 
 /* post-list */
@@ -554,7 +551,7 @@ font-size: 0;
 .card-shop {
   display: flex;
   flex-direction: column;
-  width: 25.8%;
+  width: 25%;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
@@ -771,7 +768,7 @@ color: #ffffff;
     font-size: 13px;
   }
   
-  .radio_group:first-child {
+  .radio_group_first {
     margin-right: 14px;
   }
   
@@ -1006,10 +1003,10 @@ top: 50%;
 }
 
 .trend {
- width: 49.7%;
+ width: calc(50% - 3px);
 }
 
-.trend:nth-child(3n) {
+.trend_media {
   margin-top: 3px;
 }
 
@@ -1042,17 +1039,21 @@ top: 50%;
   width: calc(50% - 40px);
 }
 
-.card-shop:nth-child(3n) {
+.card-shop_media {
   margin-top: 50px;
 }
 }
 
-/* @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+
+.container_trends {
+flex-wrap: wrap;
+}
 
   .trend {
-  width: 24.7%;
+    width: calc(25% - 5px);
   }
-}  */
+} 
 
 @media (max-width: 640px) and (orientation: landscape) {
 
@@ -1061,7 +1062,7 @@ display: flex;
 }
 
 .trend {
-  width: 49.7%;
+  width: calc(50% - 3px);
  }
 }
 
